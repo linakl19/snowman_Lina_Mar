@@ -28,7 +28,7 @@ def snowman(snowman_word):
 
         # Check if the word has already been fully guessed.
         if is_word_guessed(snowman_word, correct_letter_guess_statuses):
-            print("Congratulations! You guessed the word!")
+            print("Congratulations! You win!")
             break
 
         # Ask user to guess a letter.
@@ -49,7 +49,7 @@ def snowman(snowman_word):
     
     # Final check after the loop ends
     if not is_word_guessed(snowman_word, correct_letter_guess_statuses):
-        print(f"Game over! The word was: {snowman_word}.")
+        print(f"Sorry, you lose! The word was {snowman_word}.")
 
 
 def print_snowman_graphic(wrong_guesses_count):
